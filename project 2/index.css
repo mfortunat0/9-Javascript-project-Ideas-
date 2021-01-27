@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #343837;
+}
+
+.left, .right{
+    position: relative;
+    cursor: pointer;
+    width: 5vw;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 5vh;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.left{
+    right: -11.5%;
+}
+.right{
+    left: -11.5%;
+}
+
+.container{
+    display: flex;
+    height: 70vh;
+}
+
+.container:hover > .right, .container:hover > .left{
+    opacity: 1;
+    background-color: rgba(0,0,0,0.3);
+}
+
+img{
+    z-index: -1;
+}
